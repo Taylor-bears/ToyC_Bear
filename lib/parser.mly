@@ -41,8 +41,8 @@ func_type:
 param:
   | INT; i=ID { PInt i }
 
-block:
-  | LBRACE; stmts=list(stmt); RBRACE { SBlock stmts }
+// block:
+//   | LBRACE; stmts=list(stmt); RBRACE { SBlock stmts }
 
 stmt:
   | SEMI                                     { SBlock [] }
